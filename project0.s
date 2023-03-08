@@ -74,3 +74,18 @@ li $v0,4
 la $a0, id
 syscall
 
+##commit
+##02968946@
+
+#loading the byte in the memory address 0($t0) and 1($t0) -- 1st and 2nd indices-- to register $t1 and $t2
+lb $t1, 0($t0)
+lb $t2, 1($t0)
+
+#storing byte from the register $t2 to the memory address 0($t0) i.e. 0th index
+sb $t2, 0($t0)
+
+#loading the byte in the memory address 8($t0) i.e 8th index to register $t2
+lb $t2, 8($t0)
+
+#storing the byte from register $t1 to the memory address 8($t0) i.e. 8th index
+sb $t1, 8($t0)

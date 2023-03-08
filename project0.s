@@ -50,3 +50,19 @@ lb $t2, 4($t0)
 #storing the byte from register $t1 to the memory address 4($t0) i.e. 4th index
 sb $t1, 4($t0)
 
+##commit
+#00298946@
+#loading the byte in the memory address 3($t0) i.e 3rd index to register $t1
+lb $t1, 3($t0)
+
+#storing the byte from register $t2 to the memory address 3($t0) i.e 3rd index
+sb $t2, 3($t0)
+
+#loading the byte in the memory address 2($t0) i.e. 2nd index to register $t2
+lb $t2, 2($t0)
+
+#storing the byte from register $t1 to the memory address 2($t0) i.e. 2nd index
+sb $t1, 2($t0)
+
+#loading the byte in the memory address 1($t0) i.e. 1st index to the register $t1
+lb $t1, 1($t0)

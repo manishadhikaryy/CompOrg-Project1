@@ -138,4 +138,8 @@ sb $t1, 2($t0)
 #storing the byte from register $t1 to the memory address 1($t0) i.e. 1st index
 sb $t2, 1($t0)
 
+#print 
+li $v0,4
+la $a0, id
+syscall
 

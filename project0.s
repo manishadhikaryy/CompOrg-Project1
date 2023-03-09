@@ -121,6 +121,10 @@ li $v0,4
 la $a0, id
 syscall
 
+li $a0, 10
+li $v0, 11			
+syscall 
+
 #commit
 #2968946@0
 

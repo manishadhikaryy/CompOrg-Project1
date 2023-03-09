@@ -275,3 +275,10 @@ sb $t2, 1($t0)
 #commit
 #946@02968
 
+#print
+li $v0,4
+la $a0, id
+syscall
+
+#commit
+#946@02968

@@ -232,9 +232,21 @@ sb $t1, 2($t0)
 sb $t2, 1($t0)
 
 #commit
-8946@0296
+#8946@0296
 
 #print
 li $v0,4
 la $a0, id
 syscall
+
+#commit
+#8946@0296
+
+lb $t1, 0($t0)
+lb $t2, 1($t0)
+sb $t2, 0($t0)
+lb $t2, 8($t0)
+sb $t1, 8($t0)
+
+#commit
+#9946@0298

@@ -74,6 +74,7 @@ syscall
 
 ##commit
 ##02968946@
+#since we already moved the id by a digit, the code that follows is also in similar format
 
 lb $t1, 0($t0)
 lb $t2, 1($t0)
@@ -122,3 +123,9 @@ sb $t1, 8($t0)
 
 #commit
 ##9968946@2
+
+lb $t1, 7($t0)
+sb $t2, 7($t0)
+lb $t2, 6($t0)
+sb $t1, 6($t0)
+lb $t1, 5($t0)

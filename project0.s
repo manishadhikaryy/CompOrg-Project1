@@ -401,3 +401,10 @@ sb $t2, 1($t0)
 #commit
 #@02968946
 
+#print
+li $v0,4
+la $a0, id
+syscall
+
+#commit
+#@02968946

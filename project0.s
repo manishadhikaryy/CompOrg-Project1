@@ -1,9 +1,11 @@
 .data
 
 #storing my student id in the variable id
-id: .asciiz “@02968946\n”
+id: .asciiz "@02968946\n"
 
 .text
+
+main:
 #loading the memory address of the id to the register $t0
 la $t0, id
 

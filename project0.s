@@ -1,7 +1,7 @@
 .data
 
 #storing my student id in the variable id
-id: .asciiz "@02968946\n"
+id: .asciiz "@02968946"
 
 .text
 
@@ -73,6 +73,13 @@ sb $t2, 1($t0)
 li $v0,4
 la $a0, id
 syscall
+
+#loading the ascii of a line break to $a0
+li $a0, 10		
+
+#calling to print a new line character
+li $v0, 11			
+syscall 
 
 ##commit
 ##02968946@

@@ -157,3 +157,8 @@ syscall
 #commit
 ##968946@02
 
+lb $t1, 0($t0)
+lb $t2, 1($t0)
+sb $t2, 0($t0)
+lb $t2, 8($t0)
+sb $t1, 8($t0)

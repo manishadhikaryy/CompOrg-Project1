@@ -188,3 +188,11 @@ sb $t2, 3($t0)
 lb $t2, 2($t0)
 sb $t1, 2($t0)
 sb $t2, 1($t0)
+
+#commit
+#68946@029
+
+#print 
+li $v0,4
+la $a0, id
+syscall

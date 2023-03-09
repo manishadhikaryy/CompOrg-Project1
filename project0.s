@@ -408,3 +408,7 @@ syscall
 
 #commit
 #@02968946
+
+#exit the program
+li $v0,10
+syscall

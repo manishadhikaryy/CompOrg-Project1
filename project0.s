@@ -167,7 +167,7 @@ la $a0, id
 syscall
 
 li $v0, 4
-la $a0, id
+la $a0, newline
 syscall
 
 #commit
@@ -209,6 +209,10 @@ sb $t2, 1($t0)
 #print 
 li $v0,4
 la $a0, id
+syscall
+
+li $v0, 4
+la $a0, newline
 syscall
 
 

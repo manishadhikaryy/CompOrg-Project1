@@ -303,6 +303,10 @@ li $v0,4
 la $a0, id
 syscall
 
+li $v0, 4
+la $a0, newline
+syscall
+
 #commit
 #946@02968
 

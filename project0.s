@@ -2,6 +2,7 @@
 
 #storing my student id in the variable id
 id: .asciiz "@02968946"
+newline: .asciiz "\n"
 
 .text
 
@@ -74,12 +75,6 @@ li $v0,4
 la $a0, id
 syscall
 
-#loading the ascii of a line break to $a0
-li $a0, 10		
-
-#calling to print a new line character
-li $v0, 11			
-syscall 
 
 ##commit
 ##02968946@
@@ -120,10 +115,6 @@ sb $t2, 1($t0)
 li $v0,4
 la $a0, id
 syscall
-
-li $a0, 10
-li $v0, 11			
-syscall 
 
 #commit
 #2968946@0
@@ -167,10 +158,6 @@ li $v0,4
 la $a0, id
 syscall
 
-li $a0, 10
-li $v0, 11			
-syscall 
-
 #commit
 ##968946@02
 
@@ -212,9 +199,6 @@ li $v0,4
 la $a0, id
 syscall
 
-li $a0, 10
-li $v0, 11			
-syscall 
 
 #commit
 #68946@029
@@ -258,9 +242,6 @@ li $v0,4
 la $a0, id
 syscall
 
-li $a0, 10
-li $v0, 11			
-syscall 
 
 #commit
 #8946@0296
@@ -302,10 +283,6 @@ sb $t2, 1($t0)
 li $v0,4
 la $a0, id
 syscall
-
-li $a0, 10
-li $v0, 11			
-syscall 
 
 #commit
 #946@02968
@@ -349,10 +326,6 @@ li $v0,4
 la $a0, id
 syscall
 
-li $a0, 10
-li $v0, 11			
-syscall 
-
 #commit
 #46@029689
 
@@ -394,10 +367,6 @@ sb $t2, 1($t0)
 li $v0,4
 la $a0, id
 syscall
-
-li $a0, 10
-li $v0, 11			
-syscall 
 
 
 #commit
